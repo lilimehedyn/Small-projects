@@ -26,4 +26,10 @@ for key, value in study_hard.items():
 for value in study_hard:
     print(study_hard['period'])
 
-    
+# dictionary comprehension, how it works
+# first step - create 2 lists
+courses = ['JS Developers', 'Java Developers', 'Python Developers']
+period = ["2 months", '5 months', '4 months']
+
+my_dict = {cour: time for cour, time in zip (courses,period)}
+print(my_dict)
